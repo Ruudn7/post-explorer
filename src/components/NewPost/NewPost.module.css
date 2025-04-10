@@ -1,0 +1,33 @@
+.form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    width: 550px;
+    max-width: 80%;
+}
+
+.formControl {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+.detailWrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--btn-background);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.body {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.authorInfo {
+    margin-bottom: 1rem;
+    background-color: var(--btn-background);
+    padding: 1rem;
+    border-left: 4px solid #4caf50;
+    border-radius: 4px;
+}
+
+.unknown {
+    color: #888;
+    font-style: italic;
+}
+
+.backLink {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.backLink:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 3rem;
+}

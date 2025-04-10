@@ -1,0 +1,9 @@
+.btn {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background: var(--btn-background);
+    border: 1px solid var(--btn-border);
+    padding: 10px 32px;
+    font-weight: 700;
+    cursor: pointer;
+}

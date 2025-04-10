@@ -1,0 +1,30 @@
+:root {
+  --bg-color: #ffffff;;
+  --text-color: #000032;
+  --btn-background: #f5f6f9;
+  --btn-border: #f5f6f9;
+  --btn-background-hover: #39EFD2;
+}
+
+body.dark {
+  --bg-color: #000032;
+  --text-color: #f5f6f9;
+  --btn-background: linear-gradient(90deg, #39EFD2, #0A8AF7);
+  --btn-background-hover: #0A8AF7;
+  --btn-border: rgba(255, 255, 255, 50%);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
