@@ -52,3 +52,68 @@ export default tseslint.config({
   },
 })
 ```
+
+
+# Posts Explorer App
+
+A clean and scalable React + TypeScript app for exploring posts and their authors, built using the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/). This app demonstrates modern React patterns, API handling, context-based state management, and thoughtful UX design.
+
+---
+
+##  Features
+
+- View a list of posts from the API
+- Fetch and display author details (name, email, company, etc.)
+- Click a post to view full details
+- Add a new post (stored locally)
+- Toggle between dark and light theme (persisted in localStorage)
+- Real-time search by post title
+- Graceful error handling and loading indicators
+
+---
+
+## ⚙️ Tech Stack
+
+- **React** (with functional components and hooks)
+- **TypeScript**
+- **React Router v6.4+** (with loaders and error boundaries)
+- **Context API + useReducer** (for global state)
+- **CSS Modules** (for scoped, maintainable styles)
+- **Custom hooks** (for data fetching and logic separation)
+- **JSONPlaceholder API** (for fake posts and user data)
+
+---
+
+##  Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/posts-explorer.git
+cd posts-explorer
+
+### 2. Install dependencies
+npm install
+# or
+yarn
+
+### 3. Run the app
+npm run dev
+# or
+yarn dev
+
+The app will start at http://localhost:5173 (if using Vite).
+
+## Folder Structure Overview
+bash
+
+src/
+│
+├── components/          # Reusable UI components (PostItem, Modal, etc.)
+├── pages/               # Route-level views (PostDetailPage, etc.)
+├── store/               # Contexts and reducers (Posts, Authors, Theme)
+├── hooks/               # Custom React hooks (useHttp, usePostDetail)
+├── util/                # Helper functions (e.g. fetchAuthor)
+├── UI/                  # Generic UI elements (Button, Input, Modal)
+├── App.tsx              # Main app + routing
+└── index.tsx            # App entry point
