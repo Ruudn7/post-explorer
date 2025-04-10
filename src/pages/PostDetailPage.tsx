@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PostDetail from "../components/PostDetail/PostDetail";
 import usePostDetail from "../hooks/post-detail";
 
@@ -10,7 +10,10 @@ export default function PostDetailPage() {
   const { post, isLoading, error } = usePostDetail(postId);
 
   if (isLoading) return <p>Loading...</p>;
-  if (error || !post) return <p>Something went wrong while loading the post.</p>;
+  if (error || !post) return <>
+    <p>Something went wrong while loading the post.</p>
+    <Link to="/">Back to Post List</Link>
+  </>
 
   return <PostDetail post={post} />;
 }
